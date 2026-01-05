@@ -9,7 +9,7 @@ jobs: #Definición de los jobs
         uses: haythem/public-ip@v1.3 #Usará el action haythem/public-ip
       - name: Hola mundo #Segundo step de nombre Hola mundo
         run: echo ¡Hola Mundo desde ${{ steps.ip.outputs.ipv4 }}! #bash
-      - name: Check oout Repo
+      - name: Check out Repo
         uses: actions/checkout@v3
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
