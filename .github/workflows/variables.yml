@@ -11,6 +11,6 @@ jobs:
       SALUDO: Quiubo
     steps:
       - name: Saludar
-        run: echo "$SALUDO, $NOMBRE. Tu apellido es $APELLIDO "
+        run: echo "$SALUDO, $NOMBRE. Tu apellido es ${{ vars.APELLIDO }}"
         env:
           NOMBRE: Erick
